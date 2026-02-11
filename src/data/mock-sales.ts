@@ -11,6 +11,12 @@ export const salesOkrs: Okr[] = [
     dueDate: "2026-01-31",
     percentComplete: 50,
   },
+  {
+    name: "Achieve 90% win rate",
+    dueDate: "2026-03-31",
+    percentComplete: 70,
+    status: "green",
+  },
 ];
 
 export interface OpenDeal {

@@ -3,8 +3,6 @@ import { marketingOkrs } from "@/data/mock-marketing";
 import { PipeGenAttainmentTable } from "./marketing-tab/pipe-gen-attainment-table";
 import { SiteTrafficTable } from "./marketing-tab/site-traffic-table";
 import { FunnelTable } from "./marketing-tab/funnel-table";
-import { SdrPipelineTable } from "./marketing-tab/sdr-pipeline-table";
-import { SdrOpsTable } from "./marketing-tab/sdr-ops-table";
 
 export function MarketingTab() {
   return (
@@ -19,8 +17,6 @@ export function MarketingTab() {
       <PipeGenAttainmentTable />
       <SiteTrafficTable />
       <FunnelTable />
-      <SdrPipelineTable />
-      <SdrOpsTable />
     </div>
   );
 }

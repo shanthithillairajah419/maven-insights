@@ -6,6 +6,12 @@ export const solutionsOkrs: Okr[] = [
     dueDate: "2026-03-31",
     percentComplete: 25,
   },
+  {
+    name: "120% prorated total consumption of contracted resolutions",
+    dueDate: "2026-03-31",
+    percentComplete: 114,
+    status: "green",
+  },
 ];
 
 // ---------------------------------------------------------------------------

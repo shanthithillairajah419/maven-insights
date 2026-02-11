@@ -45,7 +45,7 @@ function formatDueDate(dateStr: string): string {
 }
 
 function OkrTile({ okr }: { okr: Okr }) {
-  const status = getOkrStatus(okr.percentComplete);
+  const status = okr.status ?? getOkrStatus(okr.percentComplete);
   const styles = statusStyles[status];
   // Cap the visual bar width at 100% for OKRs that exceed target
   const barWidth = Math.min(okr.percentComplete, 100);

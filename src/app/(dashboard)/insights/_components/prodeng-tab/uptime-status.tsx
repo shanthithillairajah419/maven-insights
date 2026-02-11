@@ -1,0 +1,53 @@
+"use client";
+
+import { CheckCircle2 } from "lucide-react";
+import { PinButton } from "@/components/pin-button";
+import { uptimeComponents } from "@/data/mock-prodeng";
+
+export function UptimeStatus() {
+  return (
+    <div className="rounded-xl border border-border-subtle bg-card">
+      <div className="flex items-start justify-between px-6 pt-6 pb-4">
+        <div>
+          <h3 className="text-base font-semibold text-foreground">
+            System Status
+          </h3>
+          <p className="text-xs text-muted-foreground">Nov 2025 - Feb 2026</p>
+        </div>
+        <PinButton chartId="uptime-status" />
+      </div>
+
+      <div className="flex flex-col gap-6 px-6 pb-6">
+        {uptimeComponents.map((component) => (
+          <div key={component.name} className="flex flex-col gap-2">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-5 w-5 text-emerald-500" />
+                <span className="text-sm font-medium text-foreground">
+                  {component.name}
+                </span>
+                {component.subComponents !== undefined && (
+                  <span className="text-xs text-muted-foreground">
+                    {component.subComponents} component{component.subComponents !== 1 ? "s" : ""}
+                  </span>
+                )}
+              </div>
+              <span className="text-sm font-medium tabular-nums text-foreground">
+                {component.uptime}% uptime
+              </span>
+            </div>
+            {/* Uptime bar visualization */}
+            <div className="flex h-3 w-full gap-0.5 overflow-hidden rounded">
+              {Array.from({ length: 90 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="h-full flex-1 rounded-sm bg-emerald-400"
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

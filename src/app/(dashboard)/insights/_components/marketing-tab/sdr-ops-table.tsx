@@ -62,7 +62,7 @@ export function SdrOpsTable() {
 
       <AiInsight
         suggestion="Implement a mandatory discovery call quality framework to close the gap between pipeline generation and qualified meeting conversion"
-        linearTeam="MARKETING"
+        linearTeam="SALES"
       >
         Ops attainment is lagging pipeline at 40% overall — Jake leads with 8 opps (80%) but Q4 team average of 46% suggests a systemic conversion gap between pipeline generation and qualified meetings.
       </AiInsight>

@@ -1,6 +1,10 @@
 import type { Okr } from "@/types/okr";
 
-export const prodEngOkrs: Okr[] = [
+// ---------------------------------------------------------------------------
+// Helix OKRs (existing eng OKRs)
+// ---------------------------------------------------------------------------
+
+export const helixOkrs: Okr[] = [
   {
     name: "Bring Voice to GA and accelerate commercial uptake",
     dueDate: "2026-03-31",
@@ -15,11 +19,6 @@ export const prodEngOkrs: Okr[] = [
     name: "Enable Forge, Solutions, and Customers to fully own voice-surface integrations (Voice APIs)",
     dueDate: "2026-03-31",
     percentComplete: 75,
-  },
-  {
-    name: "[DEMO] OnPrem used by 1+ customer (phase 1 complete)",
-    dueDate: "2026-03-31",
-    percentComplete: 40,
   },
   {
     name: "Deliver a seamless, high-confidence Agent Ops experience",
@@ -40,6 +39,109 @@ export const prodEngOkrs: Okr[] = [
     name: "[Launch] Capabilities",
     dueDate: "2026-03-31",
     percentComplete: 33,
+  },
+];
+
+// Keep backward compat alias
+export const prodEngOkrs = helixOkrs;
+
+// ---------------------------------------------------------------------------
+// General OKRs (uptime + autonomous resolution)
+// ---------------------------------------------------------------------------
+
+export const generalOkrs: Okr[] = [
+  {
+    name: "Maintain 100% all-up system uptime",
+    dueDate: "2026-03-31",
+    percentComplete: 100,
+    status: "green",
+  },
+  {
+    name: "Achieve ≥ 80% autonomous resolution rate on complex enterprise journeys",
+    dueDate: "2026-03-31",
+    percentComplete: 37,
+    status: "yellow",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Uptime data (per component)
+// ---------------------------------------------------------------------------
+
+export interface UptimeComponent {
+  name: string;
+  uptime: number;
+  subComponents?: number;
+}
+
+export const uptimeComponents: UptimeComponent[] = [
+  { name: "Agent Designer", uptime: 100 },
+  { name: "API", uptime: 100, subComponents: 1 },
+  { name: "Apps", uptime: 100, subComponents: 4 },
+];
+
+// ---------------------------------------------------------------------------
+// Incident data
+// ---------------------------------------------------------------------------
+
+export interface IncidentWeek {
+  week: string;
+  minor: number;
+  major: number;
+  critical: number;
+  total: number;
+}
+
+export const incidentData: IncidentWeek[] = [
+  { week: "Jan 12, 2026", minor: 0, major: 1, critical: 0, total: 1 },
+  { week: "Jan 19, 2026", minor: 0, major: 1, critical: 0, total: 1 },
+  { week: "Jan 26, 2026", minor: 2, major: 1, critical: 1, total: 4 },
+  { week: "Feb 2, 2026", minor: 2, major: 1, critical: 0, total: 3 },
+];
+
+// ---------------------------------------------------------------------------
+// Forge OKRs
+// ---------------------------------------------------------------------------
+
+export const forgeOkrs: Okr[] = [
+  {
+    name: "Email used by 3+ customers",
+    dueDate: "2026-01-31",
+    percentComplete: 40,
+  },
+  {
+    name: "Attachment Support for Agent Handoff for 3 ticketing systems (Genesys, Hubspot, Salesforce) used by 1+ customers each",
+    dueDate: "2026-01-31",
+    percentComplete: 33,
+  },
+  {
+    name: "Freshservice copilot used by 1+ customer",
+    dueDate: "2026-01-31",
+    percentComplete: 0,
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Athena OKRs
+// ---------------------------------------------------------------------------
+
+export const athenaOkrs: Okr[] = [
+  {
+    name: "LAND: Platform API (Inception)",
+    dueDate: "2026-03-31",
+    percentComplete: 45,
+    status: "yellow",
+  },
+  {
+    name: "LAND: Events API (Dependency to enable proactive)",
+    dueDate: "2026-03-31",
+    percentComplete: 80,
+    status: "green",
+  },
+  {
+    name: "[DEMO] OnPrem used by 1+ customer (phase 1 complete)",
+    dueDate: "2026-03-31",
+    percentComplete: 40,
   },
 ];
 
