@@ -63,7 +63,10 @@ export function MultiYearTable() {
         <PinButton chartId="multi-year-q1" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Begin expansion conversations with Clio and Intralinks now while anniversary sentiment is positive to upsell additional surfaces"
+        linearTeam="CX"
+      >
         All $717K in multi-year anniversaries are closed-won, reflecting strong long-term customer commitment — Intralinks ($184K) and Clio ($166K) are the largest and both on track.
       </AiInsight>
 

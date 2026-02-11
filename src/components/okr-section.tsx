@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { PinButton } from "@/components/pin-button";
 import { AiInsight } from "@/components/ai-insight";
+import type { LinearTeamKey } from "@/lib/linear";
 import type { Okr } from "@/types/okr";
 import { cn } from "@/lib/utils";
 
@@ -85,16 +86,22 @@ interface OkrSectionProps {
   okrs: Okr[];
   chartId: string;
   insight?: string;
+  suggestion?: string;
+  linearTeam?: LinearTeamKey;
 }
 
-export function OkrSection({ okrs, chartId, insight }: OkrSectionProps) {
+export function OkrSection({ okrs, chartId, insight, suggestion, linearTeam }: OkrSectionProps) {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold text-foreground">OKRs</h2>
         <PinButton chartId={chartId} />
       </div>
-      {insight && <AiInsight className="px-0">{insight}</AiInsight>}
+      {insight && (
+        <AiInsight className="px-0" suggestion={suggestion} linearTeam={linearTeam}>
+          {insight}
+        </AiInsight>
+      )}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {okrs.map((okr) => (
           <OkrTile key={okr.name} okr={okr} />

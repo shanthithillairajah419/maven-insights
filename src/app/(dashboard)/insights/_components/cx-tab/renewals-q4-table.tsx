@@ -67,7 +67,10 @@ export function RenewalsQ4Table() {
         <PinButton chartId="renewals-q4" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Conduct a post-mortem on Spotnana and Hive churn to identify common signals and build an early-warning playbook for Q1"
+        linearTeam="CX"
+      >
         Q4 closed at $212K forecasted against $317K renewable — Spotnana and Hive churn accounted for $98K in losses, but Digital.ai's $121K renewal anchored the quarter.
       </AiInsight>
 

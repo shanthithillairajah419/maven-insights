@@ -66,7 +66,10 @@ export function OnboardingAtRiskTable() {
         <PinButton chartId="onboarding-at-risk" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Escalate Rockstar Automations to leadership for a retention save-or-churn decision and redirect FDE capacity to Great Place To Work"
+        linearTeam="SOLUTIONS"
+      >
         Rockstar Automations at 203 days is actively disengaging — Great Place To Work (144 days) is closest to go-live with a Jan 29 target, making it the best candidate for rescue focus.
       </AiInsight>
 

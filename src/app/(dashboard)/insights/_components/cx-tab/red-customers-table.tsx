@@ -58,7 +58,10 @@ export function RedCustomersTable() {
         <PinButton chartId="red-customers" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Assign executive sponsors to Runway and impact.com this week — they represent $389K in at-risk ARR and need VP-level intervention"
+        linearTeam="CX"
+      >
         $916K in ARR is at risk across 9 red accounts — Runway ($223K) and impact.com ($166K) represent 42% of the exposure and both are in value realization, making them high-priority intervention targets.
       </AiInsight>
 

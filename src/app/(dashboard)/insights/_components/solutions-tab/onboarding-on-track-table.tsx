@@ -59,7 +59,10 @@ export function OnboardingOnTrackTable() {
         <PinButton chartId="onboarding-on-track" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Fast-track Apryse and Practice Better as sub-30-day onboarding case studies to demonstrate the team's improving velocity"
+        linearTeam="SOLUTIONS"
+      >
         3 new customers kicked off in January with a healthy average of 12 days — Apryse (4 days) and Practice Better (12 days) are on pace for sub-30-day onboarding.
       </AiInsight>
 

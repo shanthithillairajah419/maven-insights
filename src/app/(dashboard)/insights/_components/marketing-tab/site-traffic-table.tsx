@@ -54,7 +54,10 @@ export function SiteTrafficTable() {
         <PinButton chartId="site-traffic" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Double down on current paid mix while traffic is surging — increase budget allocation to top-performing ad sets this week"
+        linearTeam="MARKETING"
+      >
         Site traffic surged 63% MoM (5,640 to 9,187) while CPL dropped from $983 to $670 — paid campaigns are driving more efficient top-of-funnel volume this month.
       </AiInsight>
 

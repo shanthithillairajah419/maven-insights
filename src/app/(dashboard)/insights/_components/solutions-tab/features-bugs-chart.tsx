@@ -27,10 +27,10 @@ export function FeaturesBugsChart() {
         </h3>
         <PinButton chartId="features-bugs" />
       </div>
-      <p className="text-sm text-muted-foreground px-6">
-        Weekly — Solutions team only
-      </p>
-      <AiInsight>
+      <AiInsight
+        suggestion="Allocate 60% of next sprint to feature delivery to rebalance the bug-fix-heavy ratio and ship more customer-facing value"
+        linearTeam="SOLUTIONS"
+      >
         Bug fixes consistently outpace feature delivery (31 vs 20 over 5 weeks) — the team is in stabilization mode, with W4 Jan showing the best feature output at 6 deliveries.
       </AiInsight>
 

@@ -28,10 +28,10 @@ export function CustomerHealthChart() {
         </h3>
         <PinButton chartId="customer-health" />
       </div>
-      <p className="text-sm text-muted-foreground px-6">
-        53 customers — Health score trend
-      </p>
-      <AiInsight>
+      <AiInsight
+        suggestion="Document and replicate the playbook that moved 12 accounts from red/yellow to green over the past 6 months"
+        linearTeam="CX"
+      >
         Green accounts nearly doubled since June (16 to 31) while red dropped by more than half — proactive engagement efforts are clearly moving the needle on customer health.
       </AiInsight>
 

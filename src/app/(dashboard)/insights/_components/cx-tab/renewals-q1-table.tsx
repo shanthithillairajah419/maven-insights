@@ -69,7 +69,10 @@ export function RenewalsQ1Table() {
         <PinButton chartId="renewals-q1" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Escalate Payphone to executive sponsorship this week given at-risk status and $20K ARR exposure before contract end"
+        linearTeam="CX"
+      >
         Mastermind's $163K closed-won renewal secures over half of Q1 renewable ARR, but Payphone at $20K is flagged at-risk — early intervention could prevent further churn this quarter.
       </AiInsight>
 

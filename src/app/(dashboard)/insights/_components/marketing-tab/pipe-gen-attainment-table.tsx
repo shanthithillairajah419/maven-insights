@@ -69,7 +69,10 @@ export function PipeGenAttainmentTable() {
         <PinButton chartId="pipe-gen-attainment" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Schedule a partner enablement sprint with the top 5 channel partners to accelerate PQL pipeline from 6% to target pacing"
+        linearTeam="MARKETING"
+      >
         SDR channel is outperforming at 62% opp attainment and driving $10.3M in pipeline, while Partner channel is critically behind at 6% — partner enablement needs immediate attention.
       </AiInsight>
 

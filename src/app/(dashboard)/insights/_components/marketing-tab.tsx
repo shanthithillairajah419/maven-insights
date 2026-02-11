@@ -13,6 +13,8 @@ export function MarketingTab() {
         okrs={marketingOkrs}
         chartId="marketing-okrs"
         insight="Industry presence exceeded target at 158%, but lead gen and content OKRs are significantly behind — consider reallocating event-driven momentum toward direct lead campaigns."
+        suggestion="Launch a targeted paid content campaign this month to convert event-driven brand awareness into direct MQL pipeline"
+        linearTeam="MARKETING"
       />
       <PipeGenAttainmentTable />
       <SiteTrafficTable />

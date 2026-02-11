@@ -30,10 +30,10 @@ export function NewBugsTeamChart() {
         </h3>
         <PinButton chartId="new-bugs-team" />
       </div>
-      <p className="text-sm text-muted-foreground px-6">
-        Weekly — Athena, Forge, Helix, Torus, Mobius
-      </p>
-      <AiInsight>
+      <AiInsight
+        suggestion="Add pre-merge automated testing for Helix to reduce their consistently high bug rate and free up QA capacity"
+        linearTeam="PRODENG"
+      >
         Helix consistently leads in new bugs (averaging 4 per week), peaking at 6 in W3 Jan — Torus had a concerning W4 Jan spike to 5 bugs, potentially related to their recent feature push.
       </AiInsight>
 

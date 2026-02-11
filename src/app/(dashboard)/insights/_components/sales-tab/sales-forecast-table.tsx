@@ -81,7 +81,10 @@ export function SalesForecastTable() {
         <PinButton chartId="sales-forecast" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Assign 2 additional Midmarket AEs to source new pipeline this week to offset the $220K WoW contraction"
+        linearTeam="SALES"
+      >
         Commit jumped $154K WoW driven by Enterprise, but total pipeline dropped $220K — Midmarket contraction is the primary drag on top-of-funnel coverage.
       </AiInsight>
 

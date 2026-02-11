@@ -72,7 +72,10 @@ export function OpenDealsTable() {
         <PinButton chartId="open-deals" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Schedule daily check-ins with OneTrust and ClickUp deal owners through Friday to ensure procurement and legal milestones stay on track"
+        linearTeam="SALES"
+      >
         Pipeline is concentrated with 3 commit-stage deals totaling $396K closing this week — OneTrust at $242K is the largest and most time-sensitive.
       </AiInsight>
 

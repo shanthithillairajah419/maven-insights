@@ -61,7 +61,10 @@ export function RetentionTable() {
         <PinButton chartId="retention" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Create a Q1 retention war room with weekly reviews to sustain the 90% GRR momentum and identify any early warning signs"
+        linearTeam="CX"
+      >
         Q1 GRR forecast improved sharply to 90% from Q4's 72%, signaling that recent churn prevention efforts are working — maintaining NRR at 109% confirms healthy expansion activity.
       </AiInsight>
 

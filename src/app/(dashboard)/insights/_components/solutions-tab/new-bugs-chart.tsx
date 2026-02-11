@@ -28,10 +28,10 @@ export function NewBugsChart() {
         </h3>
         <PinButton chartId="new-bugs" />
       </div>
-      <p className="text-sm text-muted-foreground px-6">
-        Weekly inflow — High / Med / Low
-      </p>
-      <AiInsight>
+      <AiInsight
+        suggestion="Conduct a root-cause analysis on the W3 Jan high-severity spike to prevent recurrence and reduce bug inflow below 20 per week"
+        linearTeam="SOLUTIONS"
+      >
         Total bug inflow dropped 29% from W3 Jan (32) to W4 Jan (20), but high-severity bugs remain volatile — W3 Jan's spike to 8 high bugs warrants a root-cause review.
       </AiInsight>
 

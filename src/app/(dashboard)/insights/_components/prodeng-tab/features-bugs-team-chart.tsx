@@ -27,10 +27,10 @@ export function FeaturesBugsTeamChart() {
         </h3>
         <PinButton chartId="features-bugs-team" />
       </div>
-      <p className="text-sm text-muted-foreground px-6">
-        This Week — Athena, Forge, Helix, Torus, Mobius, Solutions
-      </p>
-      <AiInsight>
+      <AiInsight
+        suggestion="Run a Torus tech debt sprint next week to clear the 4:1 bug-to-feature ratio before it compounds into delivery delays"
+        linearTeam="PRODENG"
+      >
         Helix and Solutions are the most active teams this week with 10 combined deliveries each, while Torus shipped only 1 feature against 4 bugs — indicating heavy tech debt or stability focus.
       </AiInsight>
 

@@ -58,7 +58,10 @@ export function FunnelTable() {
         <PinButton chartId="funnel" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Create an always-on organic content calendar to reduce dependency on events, which account for 87% of funnel volume"
+        linearTeam="MARKETING"
+      >
         Events dominate the funnel at 87% of total leads (2,455 of 2,820), but Jan volume dropped sharply — organic search demos remain the most consistent non-event channel with 26 leads.
       </AiInsight>
 

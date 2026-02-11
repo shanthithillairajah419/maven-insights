@@ -14,6 +14,8 @@ export function CxTab() {
         okrs={cxOkrs}
         chartId="cx-okrs"
         insight="Consumption expansion is on track at 70%, but proactive engagement lags at 38% — prioritizing customer touchpoints could accelerate integration adoption and retention."
+        suggestion="Schedule weekly proactive check-ins with the 10 lowest-engagement accounts to drive integration adoption and lift the 38% engagement OKR"
+        linearTeam="CX"
       />
       <CustomerHealthChart />
       <RetentionTable />

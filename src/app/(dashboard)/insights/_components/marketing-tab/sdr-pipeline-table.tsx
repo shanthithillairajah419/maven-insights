@@ -60,7 +60,10 @@ export function SdrPipelineTable() {
         <PinButton chartId="sdr-pipeline" />
       </div>
 
-      <AiInsight>
+      <AiInsight
+        suggestion="Pair top performers Jake and Dylan with underperforming SDRs for shadowing sessions to distribute pipeline generation skills"
+        linearTeam="MARKETING"
+      >
         Dylan DeSimone leads Jan pipeline at $635K (212% attainment), while Bridget Larkin is at $0K — the top 3 SDRs are generating 54% of all pipeline, suggesting capacity for better distribution.
       </AiInsight>
 

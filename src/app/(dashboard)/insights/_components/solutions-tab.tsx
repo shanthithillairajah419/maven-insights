@@ -12,6 +12,8 @@ export function SolutionsTab() {
         okrs={solutionsOkrs}
         chartId="solutions-okrs"
         insight="Onboarding speed is at 25% of target — with 7 at-risk customers averaging 119 days, reducing blockers on customer-side dependencies is critical to hitting the 30-day goal."
+        suggestion="Implement a 72-hour SLA for customer-side dependency resolution to prevent onboarding timelines from stretching beyond 30 days"
+        linearTeam="SOLUTIONS"
       />
       <FeaturesBugsChart />
       <NewBugsChart />

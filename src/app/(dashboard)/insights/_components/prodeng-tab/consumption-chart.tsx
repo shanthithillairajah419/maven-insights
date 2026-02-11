@@ -36,10 +36,10 @@ export function ConsumptionChart() {
         </h3>
         <PinButton chartId="consumption-surface" />
       </div>
-      <p className="text-sm text-muted-foreground px-6">
-        Monthly — Chat, Email, Instant Answers, SMS, Voice, Copilot
-      </p>
-      <AiInsight>
+      <AiInsight
+        suggestion="Investigate Copilot and Instant Answers decline — schedule a product review to determine if this is intentional migration or a retention issue"
+        linearTeam="PRODENG"
+      >
         Chat surged 42% over 4 months (57K to 81K) and now represents 58% of total consumption, while Copilot and Instant Answers are declining — the product mix is shifting heavily toward real-time channels.
       </AiInsight>
 
