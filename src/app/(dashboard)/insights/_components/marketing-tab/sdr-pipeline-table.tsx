@@ -62,7 +62,7 @@ export function SdrPipelineTable() {
 
       <AiInsight
         suggestion="Pair top performers Jake and Dylan with underperforming SDRs for shadowing sessions to distribute pipeline generation skills"
-        linearTeam="MARKETING"
+        linearTeam="SALES"
       >
         Dylan DeSimone leads Jan pipeline at $635K (212% attainment), while Bridget Larkin is at $0K — the top 3 SDRs are generating 54% of all pipeline, suggesting capacity for better distribution.
       </AiInsight>
@@ -114,14 +114,24 @@ export function SdrPipelineTable() {
               key={row.sdr}
               className={row.isTotal ? "border-t-2 border-t-foreground" : ""}
             >
-              {COLUMNS.map((col, i) => (
-                <TableCell
-                  key={`${col.key}-${i}`}
-                  className={`px-6 py-4 text-sm tabular-nums ${row.isTotal ? "font-bold" : ""}`}
-                >
-                  {row[col.key] as string}
-                </TableCell>
-              ))}
+              {COLUMNS.map((col, i) => {
+                const isGreenHighlight =
+                  row.isTotal && (col.key === "q4" || col.key === "q4Attainment");
+                return (
+                  <TableCell
+                    key={`${col.key}-${i}`}
+                    className={`px-6 py-4 text-sm tabular-nums ${row.isTotal ? "font-bold" : ""}`}
+                  >
+                    {isGreenHighlight ? (
+                      <span className="inline-block rounded-md bg-emerald-100 px-2 py-0.5 text-emerald-800">
+                        {row[col.key] as string}
+                      </span>
+                    ) : (
+                      (row[col.key] as string)
+                    )}
+                  </TableCell>
+                );
+              })}
             </TableRow>
           ))}
         </TableBody>
