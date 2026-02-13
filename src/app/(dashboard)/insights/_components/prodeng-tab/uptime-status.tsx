@@ -42,7 +42,8 @@ export function UptimeStatus() {
               {Array.from({ length: 90 }).map((_, i) => (
                 <div
                   key={i}
-                  className="h-full flex-1 rounded-sm bg-purple-600"
+                  className="h-full flex-1 rounded-sm"
+                  style={{ backgroundColor: "#7c3aed" }}
                 />
               ))}
             </div>

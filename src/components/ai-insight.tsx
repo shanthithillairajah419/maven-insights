@@ -67,7 +67,8 @@ export function AiInsight({
               {linearTeam && status === "idle" && (
                 <button
                   onClick={handleCreateLinear}
-                  className="shrink-0 inline-flex items-center gap-1.5 h-6 px-2.5 text-xs font-medium text-white rounded-md bg-purple-600 transition-all hover:bg-purple-700 hover:shadow-sm active:scale-95"
+                  className="shrink-0 inline-flex items-center gap-1.5 h-6 px-2.5 text-xs font-medium text-white rounded-md transition-all hover:shadow-sm active:scale-95"
+                  style={{ backgroundColor: "#7c3aed" }}
                 >
                   Create Linear
                 </button>
