@@ -14,9 +14,9 @@ import {
 import { customerHealth } from "@/data/mock-cx";
 
 const chartConfig = {
-  green: { label: "Green", color: "#8b5cf6" },
-  yellow: { label: "Yellow", color: "#a78bfa" },
-  red: { label: "Red", color: "#c4b5fd" },
+  green: { label: "Green", color: "#22c55e" },
+  yellow: { label: "Yellow", color: "#eab308" },
+  red: { label: "Red", color: "#ef4444" },
 } satisfies ChartConfig;
 
 export function CustomerHealthChart() {
