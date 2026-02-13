@@ -69,25 +69,21 @@ export function AiInsight({
             <div className="flex flex-1 items-start gap-2">
               <p className="text-sm text-foreground"><span className="font-semibold">Suggestion: </span>{suggestion}</p>
               {status === "idle" && (
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="shrink-0 h-6 gap-1 px-2 text-xs font-normal"
+                <button
                   onClick={handleCreateLinear}
+                  className="shrink-0 inline-flex items-center gap-1.5 h-6 px-2.5 text-xs font-medium text-purple-700 rounded-md border border-purple-200 bg-purple-50 transition-all hover:bg-purple-100 hover:border-purple-300 hover:shadow-sm active:scale-95"
                 >
                   Create Linear
-                </Button>
+                </button>
               )}
               {status === "loading" && (
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="shrink-0 h-6 gap-1 px-2 text-xs font-normal"
+                <button
                   disabled
+                  className="shrink-0 inline-flex items-center gap-1.5 h-6 px-2.5 text-xs font-medium text-purple-400 rounded-md border border-purple-200 bg-purple-50"
                 >
                   <Loader2 className="h-3 w-3 animate-spin" />
                   Creating...
-                </Button>
+                </button>
               )}
               {status === "created" && issueUrl && (
                 <a
