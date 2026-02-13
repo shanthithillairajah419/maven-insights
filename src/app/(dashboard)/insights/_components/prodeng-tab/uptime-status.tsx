@@ -1,6 +1,5 @@
 "use client";
 
-import { CheckCircle2 } from "lucide-react";
 import { PinButton } from "@/components/pin-button";
 import { AiInsight } from "@/components/ai-insight";
 import { uptimeComponents } from "@/data/mock-prodeng";
@@ -21,12 +20,11 @@ export function UptimeStatus() {
         All components maintain 100% uptime, but incident volume spiked to 4 in Week 3 January (including 1 critical) — a pattern worth investigating before it impacts uptime targets.
       </AiInsight>
 
-      <div className="flex flex-col gap-6 px-6 pb-6">
+      <div className="flex flex-col gap-6 px-6 pb-6 pt-2">
         {uptimeComponents.map((component) => (
           <div key={component.name} className="flex flex-col gap-2">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-5 w-5 text-emerald-500" />
                 <span className="text-sm font-medium text-foreground">
                   {component.name}
                 </span>
@@ -40,12 +38,11 @@ export function UptimeStatus() {
                 {component.uptime}% uptime
               </span>
             </div>
-            {/* Uptime bar visualization */}
             <div className="flex h-3 w-full gap-0.5 overflow-hidden rounded">
               {Array.from({ length: 90 }).map((_, i) => (
                 <div
                   key={i}
-                  className="h-full flex-1 rounded-sm bg-emerald-400"
+                  className="h-full flex-1 rounded-sm bg-purple-300"
                 />
               ))}
             </div>
