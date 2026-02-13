@@ -2,20 +2,24 @@
 
 import { CheckCircle2 } from "lucide-react";
 import { PinButton } from "@/components/pin-button";
+import { AiInsight } from "@/components/ai-insight";
 import { uptimeComponents } from "@/data/mock-prodeng";
 
 export function UptimeStatus() {
   return (
     <div className="rounded-xl border border-border-subtle bg-card">
-      <div className="flex items-start justify-between px-6 pt-6 pb-4">
-        <div>
-          <h3 className="text-base font-semibold text-foreground">
-            System Status
-          </h3>
-          <p className="text-xs text-muted-foreground">Nov 2025 - Feb 2026</p>
-        </div>
+      <div className="flex items-start justify-between px-6 pt-6 pb-1">
+        <h3 className="text-base font-semibold text-foreground">
+          System Status
+        </h3>
         <PinButton chartId="uptime-status" />
       </div>
+      <AiInsight
+        suggestion="Investigate the Week 3 January spike in critical and major incidents to identify root causes and prevent recurrence"
+        linearTeam="PRODENG"
+      >
+        All components maintain 100% uptime, but incident volume spiked to 4 in Week 3 January (including 1 critical) — a pattern worth investigating before it impacts uptime targets.
+      </AiInsight>
 
       <div className="flex flex-col gap-6 px-6 pb-6">
         {uptimeComponents.map((component) => (
