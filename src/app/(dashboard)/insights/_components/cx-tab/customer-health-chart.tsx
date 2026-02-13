@@ -1,6 +1,6 @@
 "use client";
 
-import { Line, LineChart, XAxis, YAxis } from "recharts";
+import { Bar, BarChart, XAxis, YAxis } from "recharts";
 import { PinButton } from "@/components/pin-button";
 import { AiInsight } from "@/components/ai-insight";
 import {
@@ -14,9 +14,9 @@ import {
 import { customerHealth } from "@/data/mock-cx";
 
 const chartConfig = {
-  green: { label: "Green", color: "#22c55e" },
-  yellow: { label: "Yellow", color: "#eab308" },
-  red: { label: "Red", color: "#ef4444" },
+  green: { label: "Green", color: "#8b5cf6" },
+  yellow: { label: "Yellow", color: "#a78bfa" },
+  red: { label: "Red", color: "#c4b5fd" },
 } satisfies ChartConfig;
 
 export function CustomerHealthChart() {
@@ -37,38 +37,44 @@ export function CustomerHealthChart() {
 
       <div className="px-6 pb-6 pt-4">
         <ChartContainer config={chartConfig} className="h-[300px] w-full">
-          <LineChart data={customerHealth} margin={{ left: 10 }}>
+          <BarChart data={customerHealth} margin={{ left: 10 }}>
             <XAxis
               dataKey="month"
               tickLine={false}
               axisLine={false}
               tickMargin={8}
             />
-            <YAxis tickLine={false} axisLine={false} tickMargin={8} />
+            <YAxis
+              tickLine={false}
+              axisLine={false}
+              tickMargin={8}
+              label={{
+                value: "Accounts",
+                angle: -90,
+                position: "insideLeft",
+                offset: -5,
+                style: { textAnchor: "middle", fontSize: 12 },
+              }}
+            />
             <ChartTooltip content={<ChartTooltipContent />} />
             <ChartLegend content={<ChartLegendContent />} />
-            <Line
+            <Bar
               dataKey="green"
-              type="monotone"
-              stroke="var(--color-green)"
-              strokeWidth={2}
-              dot={false}
+              stackId="a"
+              fill="var(--color-green)"
             />
-            <Line
+            <Bar
               dataKey="yellow"
-              type="monotone"
-              stroke="var(--color-yellow)"
-              strokeWidth={2}
-              dot={false}
+              stackId="a"
+              fill="var(--color-yellow)"
             />
-            <Line
+            <Bar
               dataKey="red"
-              type="monotone"
-              stroke="var(--color-red)"
-              strokeWidth={2}
-              dot={false}
+              stackId="a"
+              fill="var(--color-red)"
+              radius={[4, 4, 0, 0]}
             />
-          </LineChart>
+          </BarChart>
         </ChartContainer>
       </div>
     </div>
